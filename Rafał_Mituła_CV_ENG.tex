@@ -1,0 +1,211 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+\usepackage{scrextend}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\renewcommand{\headrulewidth}{0pt}% Remove header rule
+\fancyhead{}
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{0.15\textwidth} % 27.5% of the page width for the second 
+	\vspace{-\baselineskip}	
+	\includegraphics[width=1\columnwidth]{photo.png}\\ 
+	
+\end{minipage}
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\begin{addmargin}[0.2cm]{0cm}
+		
+		\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Rafał}}}}} % First name
+			
+		\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Mituła}}}}} % Last name
+		\vspace{7pt}
+			
+		{\huge Cloud Engineer  \newline Software Developer} % Career or current job title
+	\end{addmargin}
+	
+\end{minipage}
+\begin{minipage}[t]{0.375\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{addmargin}[1.29cm]{0cm}
+		
+		% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+		% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+		\icon{MapMarker}{12}{Rzeszów, Poland}\\
+		\icon{Phone}{12}{+48 664 372 192}\\
+		\icon{At}{12}{\href{mailto:rmitula@gmail.com}{rmitula@gmail.com}}\\	
+		\icon{Linkedin}{12}{\href{https://linkedin.com/in/rmitula}{linkedin.com/in/rmitula}}\\
+				
+	\end{addmargin}
+\end{minipage}
+
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{bio}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+		
+	I remember the feeling when the first time I opened up a box of Legos and spent hours on putting hundreds of pieces together to build something highly complex and amazing  — now, I'm 22 year's old and I am still doing it by helping brands come alive through a huge Lego toolbox called Amazon Web Services.
+		
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{\textbf{Python}}{65}
+		\baritem{\textbf{Amazon Web Services}}{80}
+		\baritem{\textbf{Java}}{50}
+		\baritem{\textbf{Terraform}}{80}
+		\baritem{\textbf{Git}}{60}
+		\baritem{\textbf{SQL}}{40}
+		\baritem{\textbf{Scala}}{20}
+	\end{barchart}
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+	{08/2018 -- 10/2018}
+	{Intern}
+	{PGS Software S.A.}
+	{Developing and maintaining a secure REST API. Containerizing whole application with Docker. Investigating some of the most popular Amazon Web Services cloud technologies and database alternatives.
+		\vspace{0.1cm}\newline
+		Technology stack: \textit{Java, Spring Boot, Docker, Amazon Web Services, Terraform, Liquibase, MapStruct}
+		
+	}
+			
+			
+	\entry
+	{04/2019 -- now}
+	{Software Developer}
+	{PGS Software S.A.}
+	{AWS Cloud-native Big Data pipeline project focused on processing daily data exports from 3rd party providers. During my work, I am responsible for designing and developing extract, transform and load parts of the solution using AWS services in Multi-Account cloud strategy. I am also preparing logging and monitoring solutions; creating, maintaining and improving infrastructure as code (IaC) and tunning current processes performance.
+		\vspace{0.1cm}\newline
+		Technology stack: \textit{Python, Scala, Spark, Terraform, Terragrunt, Terratest, Jenkins}
+		\vspace{0.05cm}\newline
+		AWS stack: \textit{S3, Glue, Athena, RDS, Lambda, SQS, SNS, DynamoDB, Step Functions, EC2, Batch, CodeCommit/Build/Deploy}
+	}
+	
+	
+	
+	
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+	{2016 -- 2020}
+	{Engineer's degree}
+	{Rzeszów University of Technology}
+	{Engineering of Information Systems at the Faculty of Electrical and Computer Engineering.}
+\end{entrylist}
+
+\begin{entrylist}
+	\entry
+	{2020 -- 2022}
+	{Master's degree}
+	{Rzeszów University of Technology}
+	{Engineering of Information Systems at the Faculty of Electrical and Computer Engineering.}
+\end{entrylist}
+
+
+\cvsect{Certification}
+
+\begin{entrylist}
+	\certs
+	{2019 -- 2022}
+	{AWS Certified Developer - Associate}
+	{Amazon Web Services}
+\end{entrylist}
+
+\begin{entrylist}
+	\certs
+	{2020 -- 2022}
+	{HashiCorp Certified: Terraform Associate (Cloud Engineer)}
+	{HashiCorp}
+\end{entrylist}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Languages}
+		
+	\textbf{Polish} - Native\\
+	\textbf{English} - 	Upper intermediate\\
+	\textbf{German} - Elementary
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+		
+	\cvsect{Awards}
+		
+	1st place in my first ever Hackathon \textbf{Rzethon 2018 (SmartCity)}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+		
+	\cvsect{Special skills}
+		
+	I am a problem solver and I am exceptionally quick to spot any problems or risks and devise a solution.
+\end{minipage}
+
+\fancyfoot[C]{\tiny\color{gray} I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)}
+
+%----------------------------------------------------------------------------------------
+\end{document}
